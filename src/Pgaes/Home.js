@@ -1,29 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 class Home extends React.Component{
 render(){
      return(
         <body>
-        <><><header id="header" className="fixed-top ">
-             <div className="container d-flex align-items-center justify-content-lg-between">
-
-                 <h1 className="logo me-auto me-lg-0"><a href="index.html">Ready To Load <span>.</span></a></h1>
-                 <nav id="navbar" className="navbar order-last order-lg-0">
-                     <ul>
-                         <li><a className="nav-link scrollto active" href="index.html">Home</a></li>
-                         <li><a className="nav-link scrollto" href="/about">Goals</a></li>
-                         <li><a className="nav-link scrollto" href="Persona.html"> Personas</a></li>
-                         <li><a className="nav-link scrollto" href="sketches.html">Sketches</a></li>
-                         <li><a className="nav-link scrollto" href="Critique.html">Critique</a></li>
-                         <li><a className="nav-link scrollto" href="framework.html">Technologies/Framework</a></li>
-
-                     </ul>
-                     <i className="bi bi-list mobile-nav-toggle"></i>
-
-
-                 </nav>
-             </div>
-         </header><section id="hero" className="d-flex align-items-center justify-content-center">
+        <><><section id="hero" className="d-flex align-items-center justify-content-center">
                  <div className="container" data-aos="fade-up">
 
                      <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
@@ -79,43 +60,7 @@ render(){
                      </div>
                  </section>
 
-             </main><footer id="footer">
-                 <div className="footer-top">
-                     <div className="container">
-                         <div className="row">
-
-                             <div className="col-lg-3 col-md-6">
-                                 <div className="footer-info">
-                                     <h3>Ready To Load <span>.</span></h3>
-                                     <p>
-                                         XYZ  <br />
-                                         KY,Sd Pakistan <br /><br />
-                                         <strong>Phone:</strong> +92 5589 55488<br />
-                                         <strong>Email:</strong> info@example.com<br />
-                                     </p>
-                                     <div className="social-links mt-3">
-                                         <a href="/" className="twitter"><i className="bx bxl-twitter"></i></a>
-                                         <a href="/" className="facebook"><i className="bx bxl-facebook"></i></a>
-                                         <a href="/" className="instagram"><i className="bx bxl-instagram"></i></a>
-                                         <a href="/" className="google-plus"><i className="bx bxl-skype"></i></a>
-                                         <a href="/" className="linkedin"><i className="bx bxl-linkedin"></i></a>
-                                     </div>
-                                 </div>
-                             </div>
-
-
-
-                         </div>
-                     </div>
-                 </div>
-
-                 <div className="container">
-                     <div className="copyright">
-                         &copy; Copyright <strong><span>Ready To Load </span></strong>. All Rights Reserved
-                     </div>
-                 </div>
-             
-             </footer>
+             </main>
              <div id=""></div><a href="/" className="back-to-top d-flex 
              align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></a></><>...</></>
 </body>
