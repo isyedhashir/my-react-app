@@ -17,11 +17,11 @@ render(){
                  <nav id="navbar" className="navbar order-last order-lg-0">
                      <ul>
                          <li><a className="nav-link scrollto active" href="index.html">Home</a></li>
-                         <li><a className="nav-link scrollto" href="/about">Goals</a></li>
-                         <li><a className="nav-link scrollto" href="Persona.html"> Personas</a></li>
-                         <li><a className="nav-link scrollto" href="sketches.html">Sketches</a></li>
-                         <li><a className="nav-link scrollto" href="Critique.html">Critique</a></li>
-                         <li><a className="nav-link scrollto" href="framework.html">Technologies/Framework</a></li>
+                         <li><a className="nav-link scrollto" href="/About">About</a></li>
+                         <li><a className="nav-link scrollto" href="/Contact"> Contact</a></li>
+                         <li><a className="nav-link scrollto" href="/Loadboard">Loadboard</a></li>
+                         <li><a className="nav-link scrollto" href="/Login">Login</a></li>
+                         <li><a className="nav-link scrollto" href="/Signup">Signup</a></li>
 
                      </ul>
                      <i className="bi bi-list mobile-nav-toggle"></i>

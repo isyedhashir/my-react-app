@@ -28,10 +28,10 @@ render(){
 
                              </div>
                              <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-                                 <h3>Goal</h3>
+                                 <h3>About Us</h3>
                                  <p>
-                                     Ready to load has been designed with a goal to become the top digital freight platform in Pakistan for produce by providing freshness right to your door, minimizing transportation waste, and paving the way for long-term, sustainable development. It’s aimed towards providing a platform to the freight market where shippers and carriers can post and book a load at the ease and comfort of their home so that their loads and trucks are always on the go. Keeping in view the caliber of the freight workers in Pakistan about of usage of digital marketing, it’ll be kept simple for their easy and better understanding.
-                                     A number of aspects will help this app in reaching its goal.
+                                     Ready to load has been designed with a About Us to become the top digital freight platform in Pakistan for produce by providing freshness right to your door, minimizing transportation waste, and paving the way for long-term, sustainable development. It’s aimed towards providing a platform to the freight market where shippers and carriers can post and book a load at the ease and comfort of their home so that their loads and trucks are always on the go. Keeping in view the caliber of the freight workers in Pakistan about of usage of digital marketing, it’ll be kept simple for their easy and better understanding.
+                                     A number of aspects will help this app in reaching its About Us.
                                      {/* </p> */}
                                      <ul>
                                          <li>
