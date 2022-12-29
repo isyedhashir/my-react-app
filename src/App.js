@@ -11,6 +11,7 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 
 import {Route,Routes} from 'react-router-dom';
+import Contact from './Pages/Contact';
 
 
 
@@ -27,14 +28,13 @@ function App() {
  <Routes> */}
  <Routes>
   <Route path="/" element={<Home />}/>
-
+  <Route path="/Contact" element={<Contact />}/>
     {/* <Route exact path='/About'component={About} /> */}
     {/* <Route exact path='/Contact'component={Contact} /> */}
     {<Route path='/Login'component={Login} />}
     {/* {/* <Route path='/Signup'component={Signup} />} */}
     {/* {<Route path='/Loadboard'component={Loadboard} /> } */}
-    {<Route path='/Booking'component={Booking} /> }
-
+    <Route path="/Booking" element={<Booking />}/>
       
    </Routes>
     <Header/>
