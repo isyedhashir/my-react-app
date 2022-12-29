@@ -6,7 +6,7 @@ import Home from './Pages/Home';
 // import Loadboard from './Pages/Loadboard'
 import Booking from './Pages/Booking'
 import Login from './Pages/Login'
-// import Signup from './Pages/Signup'
+import Signup from './Pages/Signup'
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 
@@ -29,6 +29,8 @@ function App() {
  <Routes>
   <Route path="/" element={<Home />}/>
   <Route path="/Contact" element={<Contact />}/>
+  <Route path="/Signup" element={<Signup />}/>
+
     {/* <Route exact path='/About'component={About} /> */}
     {/* <Route exact path='/Contact'component={Contact} /> */}
     {<Route path='/Login'component={Login} />}
