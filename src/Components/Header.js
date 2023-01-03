@@ -10,7 +10,7 @@ render(){
 
 <div>
 
-<header id="header" className="fixed-top ">
+<header id="header" className="fixed-top " style={{backgroundColor: 'black'}}>
              <div className="container d-flex align-items-center justify-content-lg-between">
 
                  <h1 className="logo me-auto me-lg-0"><a href="index.html">Ready To Load <span>.</span></a></h1>
@@ -45,4 +45,4 @@ render(){
 
 
 } 
-export default Header
+export default Header
