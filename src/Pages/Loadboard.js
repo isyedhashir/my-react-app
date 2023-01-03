@@ -1,7 +1,5 @@
 import React from 'react';
-
-class Loadboard extends React.Component{
-render(){
+function Loadboard (){}
      return(
 
 
@@ -52,8 +50,6 @@ render(){
 
 </div></></>
      )
-}
 
-}
 export default Loadboard
  

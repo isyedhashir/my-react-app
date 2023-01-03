@@ -31,9 +31,10 @@ function App() {
   <Route path="/Contact" element={<Contact />}/>
   <Route path="/Signup" element={<Signup />}/>
 
+  <Route path="/Login" element={<Login />}/>
     {/* <Route exact path='/About'component={About} /> */}
     {/* <Route exact path='/Contact'component={Contact} /> */}
-    {<Route path='/Login'component={Login} />}
+    {/* {<Route path='/Login'component={Login} />} */}
     {/* {/* <Route path='/Signup'component={Signup} />} */}
     {/* {<Route path='/Loadboard'component={Loadboard} /> } */}
     <Route path="/Booking" element={<Booking />}/>
@@ -42,7 +43,9 @@ function App() {
     <Header/>
 <Footer/>
     </div>
-    
+
+
+
   );
 }
 
