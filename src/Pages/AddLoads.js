@@ -114,9 +114,9 @@ function AddLoads() {
                           </div>
                           <div className="d-flex flex-row align-items-center mb-4">
                             <i className="fas fa-lock fa-lg me-3 fa-fw" />
-                            <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <label class="input-group-text" for="inputGroupSelect01">Equipment Type</label>
+                            <div className="input-group mb-3">
+  <div className="input-group-prepend">
+    <label className="input-group-text" for="inputGroupSelect01">Equipment Type</label>
   </div>
   {/* <select class="custom-select" id="inputGroupSelect01">
     <option selected>Choose...</option>

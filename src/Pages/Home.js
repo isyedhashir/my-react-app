@@ -6,11 +6,11 @@ function Home (){
      return(
         <div>
         <body>
-        <><><section id="hero" class="d-flex align-items-center justify-content-center">
-  <div class="container" data-aos="fade-up">
+        <><><section id="hero" className="d-flex align-items-center justify-content-center">
+  <div className="container" data-aos="fade-up">
 
-    <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
-      <div class="col-xl-6 col-lg-8">
+    <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+      <div className="col-xl-6 col-lg-8">
         <h1 >SIMPLIFY FREIGHT AND SAVE TIME.<span>.</span></h1>
         <h2>Reimagine the future of logistics with an advanced platform for both shippers and carriers.</h2>
       </div>
@@ -24,14 +24,14 @@ function Home (){
 <main id="main">
 
 
-  <section id="about" class="about">
-    <div class="container" data-aos="fade-up">
+  <section id="about" className="about">
+    <div className="container" data-aos="fade-up">
 
-      <div class="row">
-        <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+      <div className="row">
+        <div className="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
           
         </div>
-        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+        <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
           <h3>Goal</h3>
       <p>
         Ready to load has been designed with a goal to become the top digital freight platform in Pakistan for produce by providing freshness right to your door, minimizing transportation waste, and paving the way for long-term, sustainable development. It’s aimed towards providing a platform to the freight market where shippers and carriers can post and book a load at the ease and comfort of their home so that their loads and trucks are always on the go. Keeping in view the caliber of the freight workers in Pakistan about of usage of digital marketing, it’ll be kept simple for their easy and better understanding.
@@ -64,8 +64,8 @@ function Home (){
     </div>
   </section>
              </main>
-             <div id=""></div><a href="/" classNameName="back-to-top d-flex 
-             align-items-center justify-content-center"><i classNameName="bi bi-arrow-up-short"></i></a></><>...</></>
+             <div id=""></div><a href="/" classNameNameName="back-to-top d-flex 
+             align-items-center justify-content-center"><i classNameNameName="bi bi-arrow-up-short"></i></a></><>...</></>
 </body>
 </div>    
 )
