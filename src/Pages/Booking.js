@@ -20,10 +20,10 @@ function Booking (){
   const RegisterAccount = () => {
     axios.post('http://localhost:5000/loaddetailsbyid',jsonData)
     .then(function (response) {
-      toast.success("Booking Successful",{position: toast.POSITION.TOP_CENTER});
         setLoads(response.data)
       console.log(response.data)
     })
+    
     .catch(function (error) {
       console.log(error);
   });
@@ -39,7 +39,7 @@ const formatDate = (dateString) => {
 function handleProceed(){
   axios.post('http://localhost:5000/loaddetailsbook',jsonData)
     .then(function (response) {
-      toast.success("Booking Successful",{position: toast.POSITION.TOP_CENTER});
+      toast.success("Booking Successful Check your email",{position: toast.POSITION.TOP_CENTER});
       setTimeout(() => {
         navigate("/")
    }, 3000);
@@ -48,8 +48,6 @@ function handleProceed(){
     .catch(function (error) {
       console.log(error);
   });
-  console.log(id)
-  navigate('/');
 };
      return(
       <div>
@@ -79,7 +77,7 @@ function handleProceed(){
             <div className="col-md-7">
               {/* <img src="https://via.placeholder.com/400x300/FFB6C1/000000" alt="project-image" class="rounded"> */}
               <div className="project-info-box">
-                <p><button onClick={(e)=>handleProceed()} className='btn btn-warning' >Book Load</button></p>
+                <p><button onClick={handleProceed} className='btn btn-warning' >Book Load</button></p>
               </div>{/* / project-info-box */}
             </div>{/* / column */}
           </div>
@@ -92,4 +90,4 @@ function handleProceed(){
     
     );
 }
-    export default Booking;
+    export default Booking;
