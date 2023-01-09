@@ -1,6 +1,4 @@
 import React from 'react';
-import { ReactSession } from 'react-client-session';
-import { useState } from 'react';
 
 function HeaderLogged() {
 return(
@@ -26,14 +24,16 @@ return(
                  </nav>
              </div>
          </header> */}
- <header id="header" className="fixed-top " style={{backgroundColor: 'black'}}>
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+     <header id="header" className="fixed-top " style={{backgroundColor: 'black'}}>
           <div className="container d-flex align-items-center justify-content-lg-between">
             <h1 className="logo me-auto me-lg-0"><a href="/">Ready To Load <span>.</span></a></h1>
             {/* Uncomment below if you prefer to use an image logo */}
             {/* <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>*/}
             <nav id="navbar" className="navbar order-last order-lg-0">
               <ul>
-                <li><a className="nav-link scrollto active" href="/home">Home</a></li>
+                <li><a className="nav-link scrollto" href="/">Home</a></li>
                 <li><a className="nav-link scrollto" href="/about">About</a></li>
                 {/* <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
@@ -73,11 +73,14 @@ return(
                 </li>
                 <li><a className="nav-link scrollto" href="/Loadboard">Dashboard</a></li>
               </ul>
-              <i className="bi bi-list mobile-nav-toggle" />
+              <i className="bi mobile-nav-toggle bi-list" />
             </nav>{/* .navbar */}      
             {/* <li class="dropdown"><a href="#about" class="get-started-btn scrollto">Get Started</a> */}
           </div> 
         </header>
+  </div>
+</nav>
+
 
 </div>
 
