@@ -2,7 +2,7 @@ import React from 'react';
 import { ReactSession } from 'react-client-session';
 import { useState } from 'react';
 
-function Header() {
+function HeaderLogged() {
 return(
 <div>
 
@@ -71,6 +71,7 @@ return(
                     </li> */}
                   </ul>
                 </li>
+                <li><a className="nav-link scrollto" href="/Loadboard">Dashboard</a></li>
               </ul>
               <i className="bi bi-list mobile-nav-toggle" />
             </nav>{/* .navbar */}      
@@ -85,4 +86,4 @@ return(
 
 
 } 
-export default Header
+export default HeaderLogged

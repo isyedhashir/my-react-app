@@ -1,24 +1,40 @@
 import React from 'react';
 import axios from 'axios';
 import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from "react-router-dom";
+import { ReactSession }  from 'react-client-session';
 
-function Signup() {
+function Login(doit) {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+  const navigate = useNavigate();
   var jsonData = 
     {
-      
       "username":email,
-      "password":password
+      "password":password,
   }
-
-  function RegisterAccount() 
-    console.log(email)
-    console.log(password)
+  // setloggedin(true)
+  function LoginAccount() {
     console.log("button clicked")
+    
     // Send data to the backend via POST
-    axios.post('http://localhost:5000/Login',jsonData)
+    axios.post('http://localhost:5000/login',jsonData)
     .then(function (response) {
+      console.log(response.data)
+      if(response.data === 'Successfully Logged In')
+      {
+        ReactSession.set("logged", true);
+        toast.success(response.data,{position: toast.POSITION.TOP_CENTER});
+        
+        setTimeout(() => {
+          navigate("/")
+     }, 3000);
+      }
+      if(response.data === 'Incorrect Username or Password'){
+        toast.error(response.data,{position: toast.POSITION.TOP_CENTER});
+      }
       console.log(response);
     })
     .catch(function (error) {
@@ -30,6 +46,7 @@ return(
 <div>
 
 <main id="main">
+<ToastContainer />
         <section className="vh-100" style={{backgroundColor: '#eee'}}>
           <div className="container h-100">
             <div className="row d-flex justify-content-center align-items-center h-100">
@@ -43,14 +60,14 @@ return(
                           <div className="d-flex flex-row align-items-center mb-4">
                             <i className="fas fa-envelope fa-lg me-3 fa-fw" />
                             <div className="form-outline flex-fill mb-0">
-                              <input type="email" id="form3Example3c" className="form-control" />
+                              <input type="email" id="form3Example3c" className="form-control" value={email} onChange={e => setEmail(e.target.value)}/>
                               <label className="form-label" htmlFor="form3Example3c">Your Email</label>
                             </div>
                           </div>
                           <div className="d-flex flex-row align-items-center mb-4">
                             <i className="fas fa-lock fa-lg me-3 fa-fw" />
                             <div className="form-outline flex-fill mb-0">
-                              <input type="password" id="form3Example4c" className="form-control" />
+                              <input type="password" id="form3Example4c" className="form-control" value={password} onChange={e => setPassword(e.target.value)}/>
                               <label className="form-label" htmlFor="form3Example4c">Password</label>
                             </div>
                           </div>
@@ -61,7 +78,7 @@ return(
                             </label>
                           </div> */}
                           <div className="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                            <button type="button" className="btn btn-primary btn-lg">Login</button>
+                            <button type="button" className="btn btn-primary btn-lg" onClick={LoginAccount}>Login</button>
                           </div>
                         </form>
                       </div>
@@ -81,10 +98,5 @@ return(
 
 
 )
-
-
-
-
-
-
+}
 export default Login

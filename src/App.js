@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import { useState } from 'react';
 import Home from './Pages/Home';
 // import About from './Pages/About' 
 // import Contact from './Pages/Contact'
@@ -12,35 +13,41 @@ import Footer from './Components/Footer';
 
 import {Route,Routes} from 'react-router-dom';
 import Contact from './Pages/Contact';
-
-
+import MainPage from './Pages/MainPage';
+import { ReactSession } from 'react-client-session';
+import HeaderLogged from './Components/HeaderLogged';
+import Loadboard from './Pages/Loadboard';
+import AddLoads from './Pages/AddLoads';
 
 function App() {
+  ReactSession.setStoreType("localStorage");
+  console.log(ReactSession.get("logged"))
   return (
 
     <div>
-
-<Header/>
-
+{<HeaderLogged/>
+}
     
  {/* {<Routes>}
 
  <Routes> */}
  <Routes>
-  <Route path="/" element={<Home />}/>
+  <Route path="/" element={<MainPage />}/>
   <Route path="/Contact" element={<Contact />}/>
   <Route path="/Signup" element={<Signup />}/>
 
-  <Route path="/Login" element={<Login />}/>
+  <Route path="/Login" element={<Login/>}/>
+  <Route path="/Loadboard" element={<Loadboard/>}/>
     {/* <Route exact path='/About'component={About} /> */}
     {/* <Route exact path='/Contact'component={Contact} /> */}
     {/* {<Route path='/Login'component={Login} />} */}
     {/* {/* <Route path='/Signup'component={Signup} />} */}
     {/* {<Route path='/Loadboard'component={Loadboard} /> } */}
-    <Route path="/Booking" element={<Booking />}/>
+    <Route path="/Booking/:id" element={<Booking />}/>
+    <Route path="/AddLoad" element={<AddLoads />}/>
+    
       
    </Routes>
-    <Header/>
 <Footer/>
     </div>
 

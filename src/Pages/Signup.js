@@ -1,26 +1,41 @@
 import React from 'react';
 import axios from 'axios';
 import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from "react-router-dom";
 
 function Signup() {
   const [name, setName] = useState();
+  const [company, setCompany] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+  const navigate = useNavigate();
   var jsonData = 
     {
-      "name":name,
+      "fullname":name,
       "username":email,
-      "password":password
+      "password":password,
+      "companyname":company
   }
 
   function RegisterAccount() {
-    console.log(name)
-    console.log(email)
-    console.log(password)
     console.log("button clicked")
+    
     // Send data to the backend via POST
     axios.post('http://localhost:5000/signup',jsonData)
     .then(function (response) {
+      console.log(response.data)
+      if(response.data === 'Sucess')
+      {
+        toast.success("Successfully Registered!",{position: toast.POSITION.TOP_CENTER});
+        setTimeout(() => {
+          navigate("/")
+     }, 3000);
+      }
+      if(response.data === 'Already Exist'){
+        toast.error("Username Already Exist",{position: toast.POSITION.TOP_CENTER});
+      }
       console.log(response);
     })
     .catch(function (error) {
@@ -29,6 +44,7 @@ function Signup() {
 }
      return(
         <main id="main">
+          <ToastContainer />
         <section className="vh-100" style={{backgroundColor: '#eee'}}>
           <div className="container h-100">
             <div className="row d-flex justify-content-center align-items-center h-100">
@@ -49,7 +65,7 @@ function Signup() {
                           <div className="d-flex flex-row align-items-center mb-4">
                             <i className="fas fa-user fa-lg me-3 fa-fw" />
                             <div className="form-outline flex-fill mb-0">
-                              <input type="text" id="form3Example1c" className="form-control" />
+                              <input type="text" id="form3Example1c" className="form-control" value={company} onChange={e => setCompany(e.target.value)}/>
                               <label className="form-label" htmlFor="form3Example1c">Company Name</label>
                             </div>
                           </div>
