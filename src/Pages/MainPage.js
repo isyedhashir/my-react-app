@@ -23,7 +23,7 @@ function MainPage (){
                   <img src="assets/img/about.jpg" className="img-fluid" alt="" />
                 </div>
                 <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay={100}>
-                  <h3>Our Mission </h3>
+<center>                  <h3>Our Mission </h3>  </center>
                   <p className="fst-italic">
                     To be the leading digital freight platform for fresh produce.
                   </p>
