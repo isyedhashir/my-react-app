@@ -14,7 +14,7 @@ function AddLoads() {
   const [rate, setRate] = useState();
   const [weight, setWeight] = useState();
 //   const [equipmenttype, setEquipmenttype] = useState();
-  const options = ["Refer", "Car Van"];
+  const options = ["Refer", "Dry Van"];
   const [equipmenttype, setEquipmenttype] = useState(options[0]);
   const navigate = useNavigate();
   var jsonData = 

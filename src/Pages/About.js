@@ -67,22 +67,22 @@ function About (){
                   <div className="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay={150}>
                     <i className="bx bx-receipt" />
                     <h4>Fresh Produce</h4>
-                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                   
                   </div>
                   <div className="icon-box mt-5" data-aos="zoom-in" data-aos-delay={150}>
                     <i className="bx bx-cube-alt" />
-                    <h4>Harum esse qui</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    <h4>Consumer Goods </h4>
+                   
                   </div>
                   <div className="icon-box mt-5" data-aos="zoom-in" data-aos-delay={150}>
                     <i className="bx bx-images" />
-                    <h4>Aut occaecati</h4>
-                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                    <h4>Manufacturing</h4>
+                   
                   </div>
                   <div className="icon-box mt-5" data-aos="zoom-in" data-aos-delay={150}>
                     <i className="bx bx-shield" />
-                    <h4>Beatae veritatis</h4>
-                    <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                    <h4>Agriculture</h4>
+                   
                   </div>
                 </div>
               </div>
@@ -105,21 +105,21 @@ function About (){
                   <div className="icon-box">
                     <div className="icon"><i className="bx bxl-dribbble" /></div>
                     <h4><a href>Refer</a></h4>
-                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                    <p>Perishable freight that needs to be transported in temperature controlled vehicles</p>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay={200}>
                   <div className="icon-box">
                     <div className="icon"><i className="bx bx-file" /></div>
                     <h4><a href>Dry Van</a></h4>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                    <p>Dry van shipping is one of the most popular and widely trusted freight transportation methods available</p>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay={300}>
                   <div className="icon-box">
                     <div className="icon"><i className="bx bx-tachometer" /></div>
                     <h4><a href>Flat bed </a></h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                    <p>Flatbeds can accommodate cargo capacities up to about 48,000 pounds and load heights up to 8.5 feet high.</p>
                   </div>
                 </div>
                 {/* <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
